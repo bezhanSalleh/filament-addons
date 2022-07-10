@@ -77,6 +77,10 @@ use BezhanSalleh\FilamentAddons\Forms\Components;
                     ]),
                 ]),
 ```
+> **Note**
+> The above snippet inside a resource form or page form will render as follow:
+
+https://user-images.githubusercontent.com/10007504/178133544-3621418b-8cc2-41c8-bfc0-c12d263dd0d4.mov
 
 
 Optionally, you can publish the views using
