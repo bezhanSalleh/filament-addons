@@ -1,7 +1,8 @@
 
 <a href="https://github.com/bezhansalleh/filament-addons">
-<img style="width: 100%; max-width: 100%;" alt="filament-addons-art" src="https://banners.beyondco.de/Filament%20Language%20Switch.png?theme=light&packageManager=composer+require&packageName=bezhansalleh%2Ffilament-addons&pattern=topography&style=style_2&description=Zero+config+Language+Switcher+for+Filamentphp&md=1&showWatermark=0&fontSize=125px&images=translate" >
+<img style="width: 100%; max-width: 100%;" alt="filament-addons-art" src="https://user-images.githubusercontent.com/10007504/178133343-3834205d-03a8-4c6c-9825-a90c86d15bbe.png" >
 </a>
+
 <p align="center">
     <a href="https://filamentadmin.com/docs/2.x/admin/installation">
         <img alt="FILAMENT 8.x" src="https://img.shields.io/badge/FILAMENT-2.x-EBB304?style=for-the-badge">
@@ -25,11 +26,12 @@
 
 # Filament Addons
 
-A Set of Filament Components with Extra Functionality and Design
+A set of filament components with extra functionality & fresh look
 
+1. Pills (Tab Pills)
+2. Coming Soon ...
 
-
-## Support us
+## Support Filament
 
 <a href="https://github.com/sponsors/danharrin">
 <img width="320" alt="filament-logo" src="https://filamentadmin.com/images/sponsor-banner.jpg">
@@ -92,7 +94,6 @@ composer test
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
-## Contributing
 
 ## Contributing
 
