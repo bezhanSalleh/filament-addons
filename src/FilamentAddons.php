@@ -4,5 +4,4 @@ namespace BezhanSalleh\FilamentAddons;
 
 class FilamentAddons
 {
-
 }
