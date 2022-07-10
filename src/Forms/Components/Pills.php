@@ -9,7 +9,7 @@ class Pills extends Component
 {
     use HasExtraAlpineAttributes;
 
-    protected string $view = 'filament-pills-component::components.pills';
+    protected string $view = 'filament-addons::forms.components.pills';
 
     final public function __construct(string $label)
     {

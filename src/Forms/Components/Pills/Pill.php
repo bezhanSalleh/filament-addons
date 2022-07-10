@@ -13,7 +13,7 @@ class Pill extends Component implements CanConcealComponents
 
     protected string | Closure | null $badge = null;
 
-    protected string $view = 'filament-addons::components.pills.pill';
+    protected string $view = 'filament-addons::forms.components.pills.pill';
 
     final public function __construct(string $label)
     {

@@ -25,9 +25,7 @@
     {{ $getExtraAlpineAttributeBag() }}>
 
     <input type="hidden"
-        value='{{ collect($getChildComponentContainer()->getComponents())->filter(
-                static fn(\BezhanSalleh\FilamentAddons\Forms\Components\Pills\Pill $pill): bool => !$pill->isHidden(),
-            )->map(static fn(\BezhanSalleh\FilamentAddons\Forms\Components\Pills\Pill $pill) => $pill->getId())->values()->toJson() }}'
+        value='{{ collect($getChildComponentContainer()->getComponents())->filter(static fn(\BezhanSalleh\FilamentAddons\Forms\Components\Pills\Pill $pill): bool => !$pill->isHidden())->map(static fn(\BezhanSalleh\FilamentAddons\Forms\Components\Pills\Pill $pill) => $pill->getId())->values()->toJson() }}'
         x-ref="pillsData" />
 
     <div class="sm:hidden mb-4">
@@ -44,7 +42,7 @@
         </select>
     </div>
     <div class="hidden sm:block">
-        <nav class="flex space-x-4 rtl:space-x-reverse p-2" {!! $getLabel() ? 'aria-label="' . $getLabel() . '"' : null !!} >
+        <nav class="flex space-x-4 rtl:space-x-reverse p-2" {!! $getLabel() ? 'aria-label="' . $getLabel() . '"' : null !!}>
             @foreach ($getChildComponentContainer()->getComponents() as $pill)
                 <button type="button" aria-controls="{{ $pill->getId() }}"
                     x-bind:aria-selected="pill === '{{ $pill->getId() }}'"

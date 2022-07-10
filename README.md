@@ -1,64 +1,87 @@
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
+<a href="https://github.com/bezhansalleh/filament-addons">
+<img style="width: 100%; max-width: 100%;" alt="filament-addons-art" src="https://banners.beyondco.de/Filament%20Language%20Switch.png?theme=light&packageManager=composer+require&packageName=bezhansalleh%2Ffilament-addons&pattern=topography&style=style_2&description=Zero+config+Language+Switcher+for+Filamentphp&md=1&showWatermark=0&fontSize=125px&images=translate" >
+</a>
+<p align="center">
+    <a href="https://filamentadmin.com/docs/2.x/admin/installation">
+        <img alt="FILAMENT 8.x" src="https://img.shields.io/badge/FILAMENT-2.x-EBB304?style=for-the-badge">
+    </a>
+    <a href="https://packagist.org/packages/bezhansalleh/filament-addons">
+        <img alt="Packagist" src="https://img.shields.io/packagist/v/bezhansalleh/filament-addons.svg?style=for-the-badge&logo=packagist">
+    </a>
+    <a href="https://github.com/bezhansalleh/filament-addons/actions?query=workflow%3Arun-tests+branch%3Amain">
+        <img alt="Tests Passing" src="https://img.shields.io/github/workflow/status/bezhansalleh/filament-addons/run-tests?style=for-the-badge&logo=github&label=tests">
+    </a>
+    <a href="https://github.com/bezhansalleh/filament-addons/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain">
+        <img alt="Code Style Passing" src="https://img.shields.io/github/workflow/status/bezhansalleh/filament-addons/run-tests?style=for-the-badge&logo=github&label=code%20style">
+    </a>
 
-# This is my package filament-tab-pills-component
+<a href="https://packagist.org/packages/bezhansalleh/filament-addons">
+    <img alt="Downloads" src="https://img.shields.io/packagist/dt/bezhansalleh/filament-addons.svg?style=for-the-badge" >
+    </a>
+</p>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/bezhansalleh/filament-tab-pills-component.svg?style=flat-square)](https://packagist.org/packages/bezhansalleh/filament-tab-pills-component)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/bezhansalleh/filament-tab-pills-component/run-tests?label=tests)](https://github.com/bezhansalleh/filament-tab-pills-component/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/bezhansalleh/filament-tab-pills-component/Check%20&%20fix%20styling?label=code%20style)](https://github.com/bezhansalleh/filament-tab-pills-component/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/bezhansalleh/filament-tab-pills-component.svg?style=flat-square)](https://packagist.org/packages/bezhansalleh/filament-tab-pills-component)
+<hr style="background-color: #ff2e21"></hr>
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+# Filament Addons
+
+A Set of Filament Components with Extra Functionality and Design
+
+
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-tab-pills-component.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-tab-pills-component)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+<a href="https://github.com/sponsors/danharrin">
+<img width="320" alt="filament-logo" src="https://filamentadmin.com/images/sponsor-banner.jpg">
+</a>
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require bezhansalleh/filament-tab-pills-component
+composer require bezhansalleh/filament-addons
 ```
+### Admin & Forms
 
-You can publish and run the migrations with:
+#### Pills (Tab Pills)
+`Pills` basically behaves like the already existing `Tabs` form component but does more:
 
-```bash
-php artisan vendor:publish --tag="filament-tab-pills-component-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-tab-pills-component-config"
-```
-
-This is the contents of the published config file:
+- Can have icons 🥳
+- Can have badges 💯
+- has a **fresh** look 💅
 
 ```php
-return [
-];
+use BezhanSalleh\FilamentAddons\Forms\Components;
+
+        Components\Pills::make('Heading')
+            ->pills([
+                Components\Pills\Pill::make('Shield')
+                    ->icon('heroicon-o-shield-check')
+                    ->badge('7.2K')
+                    ->schema([
+                        Forms\Components\View::make('static-hello')
+                    ]),
+                Components\Pills\Pill::make('Google Analytics')
+                    ->schema([
+                        Forms\Components\View::make('static-why')
+                            ->fieldWrapperView(fn() => view('welcome')),
+                        ])->columns(1),
+                Components\Pills\Pill::make('Translations Manager')
+                    ->icon('heroicon-o-sparkles')
+                    ->schema([
+                        Forms\Components\View::make('static-view'),
+                        ...
+                    ]),
+                ]),
 ```
+
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="filament-tab-pills-component-views"
+php artisan vendor:publish --tag="filament-addons-views"
 ```
-
-## Usage
-
-```php
-$filamentTabPillsComponent = new BezhanSalleh\FilamentTabPillsComponent();
-echo $filamentTabPillsComponent->echoPhrase('Hello, BezhanSalleh!');
-```
-
 ## Testing
 
 ```bash
@@ -70,6 +93,31 @@ composer test
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
+
+## Contributing
+
+If you want to contribute to this packages, you may want to test it in a real Filament project:
+
+- Fork this repository to your GitHub account.
+- Create a Filament app locally.
+- Clone your fork in your Filament app's root directory.
+- In the `/filament-addons` directory, create a branch for your fix, e.g. `fix/error-message`.
+
+Install the packages in your app's `composer.json`:
+
+```json
+"require": {
+    "bezhansalleh/filament-addons": "dev-fix/error-message as main-dev",
+},
+"repositories": [
+    {
+        "type": "path",
+        "url": "filament-addons"
+    }
+]
+```
+
+Now, run `composer update`.
 
 Please see [CONTRIBUTING](https://github.com/bezhanSalleh/.github/blob/main/CONTRIBUTING.md) for details.
 
