@@ -19,7 +19,7 @@
     "
     x-cloak {!! $getId() ? "id=\"{$getId()}\"" : null !!}
     {{ $attributes->merge($getExtraAttributes())->class([
-            'p-4 rounded-xl shadow-sm bg-white filament-addons-pills-component',
+            'p-4 rounded-xl shadow-sm bg-white filament-addons',
             'dark:bg-gray-700 dark:border-gray-600' => config('forms.dark_mode'),
         ]) }}
     {{ $getExtraAlpineAttributeBag() }}>

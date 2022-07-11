@@ -3,10 +3,8 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
     content: ["./resources/views/**/*.blade.php", "./src/**/*.php"],
+    important: ".filament-addons",
     darkMode: "class",
-    corePlugins: {
-        preflight: false,
-    },
     theme: {
         extend: {
             colors: {
@@ -18,4 +16,7 @@ module.exports = {
         },
     },
     plugins: [],
+    corePlugins: {
+        preflight: false,
+    },
 };
