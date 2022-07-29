@@ -52,11 +52,13 @@ composer require bezhansalleh/filament-addons
 - Can have icons 🥳
 - Can have badges 💯
 - has a **fresh** look 💅
+- Can be marked as active ✅
 
 ```php
 use BezhanSalleh\FilamentAddons\Forms\Components;
 
         Components\Pills::make('Heading')
+            ->activePill(2) // pill two will be the default active one
             ->pills([
                 Components\Pills\Pill::make('Shield')
                     ->icon('heroicon-o-shield-check')
