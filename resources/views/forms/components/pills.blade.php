@@ -3,7 +3,7 @@
     pill: null,
 
     init: function() {
-        this.pill = this.getPills()[0]
+        this.pill = this.getPills()[{{ $getActivePill() }} - 1]
     },
 
     getPills: function() {
@@ -45,9 +45,8 @@
         <nav class="flex space-x-4 rtl:space-x-reverse p-2" {!! $getLabel() ? 'aria-label="' . $getLabel() . '"' : null !!}>
             @foreach ($getChildComponentContainer()->getComponents() as $pill)
                 <button type="button" aria-controls="{{ $pill->getId() }}"
-                    x-bind:aria-selected="pill === '{{ $pill->getId() }}'"
-                    x-on:click="pill = '{{ $pill->getId() }}'" role="tab"
-                    x-bind:tabindex="pill === '{{ $pill->getId() }}' ? 0 : -1"
+                    x-bind:aria-selected="pill === '{{ $pill->getId() }}'" x-on:click="pill = '{{ $pill->getId() }}'"
+                    role="tab" x-bind:tabindex="pill === '{{ $pill->getId() }}' ? 0 : -1"
                     class="flex items-center justify-center gap-3 px-3 py-1.5 rounded-lg font-medium transition"
                     x-bind:class="{
                         'bg-gray-500/5 text-gray-500 hover:bg-gray-500/10 focus:bg-gray-500/10 @if (config('filament.dark_mode')) dark:text-gray-100 dark:hover:bg-gray-600 @endif': pill !==
