@@ -3,11 +3,11 @@
 namespace BezhanSalleh\FilamentAddons\Tables\Columns;
 
 use Closure;
-use Throwable;
-use Filament\Tables\Columns\TextColumn;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Contracts\Filesystem\Filesystem;
 use Filament\Tables\Columns\Concerns;
+use Filament\Tables\Columns\TextColumn;
+use Illuminate\Contracts\Filesystem\Filesystem;
+use Illuminate\Support\Facades\Storage;
+use Throwable;
 
 class ChipColumn extends TextColumn
 {
