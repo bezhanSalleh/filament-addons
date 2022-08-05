@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/Cellar/node/18.3.0/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/sbin:/Users/bsalleh/.fig/bin:/Users/bsalleh/.local/bin:/Users/bsalleh/.composer/vendor/bin:/Users/bsalleh/Sites/flutter/bin:/Users/bsalleh/Library/Android/sdk/tools:/Users/bsalleh/Library/Android/sdk/tools/bin/:/Users/bsalleh/Library/Android/sdk/platform-tools:/Users/bsalleh/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/sbin:/Users/bsalleh/.fig/bin:/Users/bsalleh/.local/bin:/Users/bsalleh/.composer/vendor/bin:/Users/bsalleh/Sites/flutter/bin:/Users/bsalleh/Library/Android/sdk/tools:/Users/bsalleh/Library/Android/sdk/tools/bin/:/Users/bsalleh/Library/Android/sdk/platform-tools:/Users/bsalleh/Sites/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/sbin:/Users/bsalleh/.fig/bin:/Users/bsalleh/.local/bin:/Users/bsalleh/.composer/vendor/bin:/Users/bsalleh/Sites/flutter/bin:/Users/bsalleh/Library/Android/sdk/tools:/Users/bsalleh/Library/Android/sdk/tools/bin/:/Users/bsalleh/Library/Android/sdk/platform-tools:/Users/bsalleh/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/sbin:/Users/bsalleh/.fig/bin:/Users/bsalleh/.local/bin:/Users/bsalleh/.composer/vendor/bin:/Users/bsalleh/Sites/flutter/bin:/Users/bsalleh/Library/Android/sdk/tools:/Users/bsalleh/Library/Android/sdk/tools/bin/:/Users/bsalleh/Library/Android/sdk/platform-tools:/Users/bsalleh/Library/Android/sdk/tools:/Users/bsalleh/Library/Android/sdk/tools/bin/:/Users/bsalleh/Library/Android/sdk/platform-tools:/Users/bsalleh/.composer/vendor/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.3.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/bsalleh/Sites/packages/addons/package.json: Unexpected token } in JSON at position 414
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "private": true,
+    "description": "A Set of Filament Component Addons with different designs and extra functionalities",
+    "main": "index.js",
+    "scripts": {
+      "dev": "npx tailwindcss -i resources/css/filament-addons.css -o resources/dist/filament-addons.css --postcss --watch",
+      "build": "npx tailwindcss -i resources/css/filament-addons.css -o resources/dist/filament-addons.css --postcss --minify",
+    },
+    "author": "Bezhan Salleh",
+    "license": "MIT",
+    "devDependencies": {
+      "autoprefixer": "^10.4",
+      "postcss": "^8.4",
+      "tailwindcss": "^3.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -3,19 +3,12 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
     content: ["./resources/views/**/*.blade.php", "./src/**/*.php"],
-    important: ".filament-addons",
     darkMode: "class",
+    important: ".filament-addons",
     theme: {
-        extend: {
-            colors: {
-                danger: colors.rose,
-                primary: colors.yellow,
-                success: colors.green,
-                warning: colors.amber,
-            },
-        },
+        extend: {},
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/typography")],
     corePlugins: {
         preflight: false,
     },
