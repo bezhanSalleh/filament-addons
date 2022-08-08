@@ -2,6 +2,14 @@
 
 All notable changes to `filament-tab-pills-component` will be documented in this file.
 
+## 0.0.4 - 2022-08-08
+
+### What's Changed
+
+- feature: new `TableBuilder` column `ChipColumn` by @bezhanSalleh in https://github.com/bezhanSalleh/filament-addons/pull/2
+
+**Full Changelog**: https://github.com/bezhanSalleh/filament-addons/compare/v0.0.3...0.0.4
+
 ## v0.0.3 - 2022-07-29
 
 ### What's Changed
