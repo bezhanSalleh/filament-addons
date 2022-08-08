@@ -45,7 +45,7 @@ You can install the package via composer:
 ```bash
 composer require bezhansalleh/filament-addons
 ```
-### Admin & Forms
+### Admin Panel & Forms
 
 #### Pills (Tab Pills)
 `Pills` basically behaves like the already existing `Tabs` form component but does more:
@@ -85,7 +85,7 @@ use BezhanSalleh\FilamentAddons\Forms\Components;
 
 https://user-images.githubusercontent.com/10007504/178133544-3621418b-8cc2-41c8-bfc0-c12d263dd0d4.mov
 
-### Admin & Tables
+### Admin Panel & Tables
 
 #### ChipColumn
 `ChipColumn` basically behaves like the already existing `Badge` Column but changes the appearance and icon desing:
@@ -108,7 +108,10 @@ ChipColumn::make('role')
     ])
     ->iconPosition('before')
 ```
+<img width="211" alt="Screen Shot 2022-08-08 at 2 29 47 PM" src="https://user-images.githubusercontent.com/10007504/183393206-053f52c8-339d-4b53-b89b-b39f8c666999.png">
+
 * Use `invert()` to make it pop
+<img width="211" alt="Screen Shot 2022-08-08 at 2 30 07 PM" src="https://user-images.githubusercontent.com/10007504/183393247-24f9763c-e09a-469f-bc6f-31363130e5ba.png">
 
 Optionally, you can publish the views using
 
