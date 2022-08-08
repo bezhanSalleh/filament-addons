@@ -29,7 +29,8 @@
 A set of filament components with extra functionality & fresh look
 
 1. Pills (Tab Pills)
-2. Coming Soon ...
+2. Chip Column
+3. Coming Soon ...
 
 ## Support Filament
 
@@ -84,6 +85,30 @@ use BezhanSalleh\FilamentAddons\Forms\Components;
 
 https://user-images.githubusercontent.com/10007504/178133544-3621418b-8cc2-41c8-bfc0-c12d263dd0d4.mov
 
+### Admin & Tables
+
+#### ChipColumn
+`ChipColumn` basically behaves like the already existing `Badge` Column but changes the appearance and icon desing:
+```php
+use BezhanSalleh\FilamentAddons\Tables\Columns\ChipColumn;
+
+ChipColumn::make('role')
+    ->label('Role(Chip)')
+    ->colors([
+        'primary',
+        'success' => fn ($state): bool => $state === 'admin',
+        'warning' => fn ($state): bool => $state === 'manager',
+        'danger' => fn ($state): bool => $state === 'editor',
+    ])
+    ->icons([
+        'heroicon-o-x',
+        'heroicon-s-shield-check' => fn ($state): bool => $state === 'admin',
+        'heroicon-o-user' => fn ($state): bool => $state === 'manager',
+        'heroicon-o-sparkles' => fn ($state): bool => $state === 'editor'
+    ])
+    ->iconPosition('before')
+```
+* Use `invert()` to make it pop
 
 Optionally, you can publish the views using
 
