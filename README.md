@@ -32,12 +32,6 @@ A set of filament components with extra functionality & fresh look
 2. Chip Column
 3. Coming Soon ...
 
-## Support Filament
-
-<a href="https://github.com/sponsors/danharrin">
-<img width="320" alt="filament-logo" src="https://filamentadmin.com/images/sponsor-banner.jpg">
-</a>
-
 ## Installation
 
 You can install the package via composer:
