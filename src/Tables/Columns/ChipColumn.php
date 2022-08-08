@@ -21,5 +21,4 @@ class ChipColumn extends BadgeColumn
     {
         return $this->invert;
     }
-
 }
