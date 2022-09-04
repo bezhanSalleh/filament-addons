@@ -2,6 +2,10 @@
 
 All notable changes to `filament-tab-pills-component` will be documented in this file.
 
+## 1.0.0 - 2022-09-04
+
+**Full Changelog**: https://github.com/bezhanSalleh/filament-addons/compare/0.0.4...1.0.0
+
 ## 0.0.4 - 2022-08-08
 
 ### What's Changed
