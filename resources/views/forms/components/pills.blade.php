@@ -49,7 +49,7 @@
                     role="tab" x-bind:tabindex="pill === '{{ $pill->getId() }}' ? 0 : -1"
                     class="flex items-center justify-center gap-3 px-3 py-1.5 rounded-lg font-medium transition"
                     x-bind:class="{
-                        'bg-gray-500/5 text-gray-500 hover:bg-gray-500/10 focus:bg-gray-500/10 @if (config('filament.dark_mode')) dark:text-gray-100 dark:hover:bg-gray-600 @endif': pill !==
+                        'bg-gray-500/5 text-gray-500 hover:bg-gray-500/10 focus:bg-gray-500/10 @if (config('filament.dark_mode')) dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-600 @endif': pill !==
                             '{{ $pill->getId() }}',
                         'bg-primary-500 text-white': pill === '{{ $pill->getId() }}',
                     }">
