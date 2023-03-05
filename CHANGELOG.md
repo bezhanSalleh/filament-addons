@@ -2,6 +2,23 @@
 
 All notable changes to `filament-tab-pills-component` will be documented in this file.
 
+## 1.0.1 - 2023-03-05
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.3 to 1.3.4 by @dependabot in https://github.com/bezhanSalleh/filament-addons/pull/3
+- Bump dependabot/fetch-metadata from 1.3.4 to 1.3.5 by @dependabot in https://github.com/bezhanSalleh/filament-addons/pull/4
+- Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/bezhanSalleh/filament-addons/pull/6
+- Bump ramsey/composer-install from 1 to 2 by @dependabot in https://github.com/bezhanSalleh/filament-addons/pull/5
+- Laravel 10 Support by @patrickcurl in https://github.com/bezhanSalleh/filament-addons/pull/7
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/bezhanSalleh/filament-addons/pull/3
+- @patrickcurl made their first contribution in https://github.com/bezhanSalleh/filament-addons/pull/7
+
+**Full Changelog**: https://github.com/bezhanSalleh/filament-addons/compare/1.0.0...1.0.1
+
 ## 1.0.0 - 2022-09-04
 
 **Full Changelog**: https://github.com/bezhanSalleh/filament-addons/compare/0.0.4...1.0.0
